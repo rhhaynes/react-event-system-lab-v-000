@@ -1,12 +1,11 @@
 import React from 'react';
 
 export default class EyesOnMe extends React.Component {
-  blurFunc = () => {};
-  focusFunc = () => {};
+  blrFunc = () => console.log('Hey! Eyes on me!');
+  fcsFunc = () => console.log('Good!');
   render() {
     return (
-      <button onBlur={this.blurFunc} onFocus={this.focusFunc}>
-      </button>
+      <button onBlur={this.blrFunc} onFocus={this.fcsFunc}></button>
     );
   }
 }
